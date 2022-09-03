@@ -6,6 +6,14 @@ h1{
     font-weight: bold;
 }
 
+#midname:hover{
+    text-decoration:overline;
+}
+
+.nav-item>a:hover{
+    text-decoration:overline;
+}
+
 .fixed-top {
     position: fixed;
     top: 0;

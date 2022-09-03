@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <title>Cafe Delight|Menu</title>
     <script>
       function openMenu(MenuName) {
         var i;
@@ -32,6 +33,13 @@
         color: black;
         margin: 10px;
       }
+      #midname:hover{
+    text-decoration:overline;
+}
+
+.nav-item>a:hover{
+    text-decoration:overline;
+}
       #wal{
         text-align:center ;
          padding-top: 50cm; 
@@ -107,9 +115,63 @@
     width:20px;
     padding:3px;
     }
+
+    @media (max-width: 600px) {
+     
+    }
     </style>
   </head>
   <body id="bdy">
+    <header >
+      <nav id="nav" class="navbar navbar-dark navbar-expand-lg navbar-togglable  bg-dark fixed-top " >
+          <div class="container ">
+        
+            <!-- Navbar brand (mobile) -->
+            <a id="nav" class="navbar-brand d-lg-none" href="./index.html">Cafe Delight</a>
+        
+            <!-- Navbar toggler -->
+            <button id="navbtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Navbar collapse -->
+            <div class="collapse navbar-collapse  " id="navbarCollapse">
+        
+              <!-- Navbar nav -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-light " href="./about-us.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light active" href="./menu.html">MENU</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light " href="./reservation.html">RESERVATION</a>
+                </li>
+              </ul>
+        
+              <!-- Navbar brand -->
+              <a id="midname" class="navbar-brand d-none d-lg-flex mx-lg-auto " href="./index.html" style="font-family: 'Oooh Baby', cursive;">
+                Cafe Delight
+              </a>
+        
+              <!-- Navbar nav -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-light " href="./news-and-events.html">NEWS &amp; EVENTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="./gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light " href="./contact-us.html">CONTACT</a>
+                </li>
+              </ul>
+        
+            </div>
+          <!-- </div> -->
+        </nav>
+      </header>
     <section id="sec">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -117,7 +179,7 @@
             <div class="img-fluid">
               <img src="https://img.rawpixel.com/private/static/images/website/2022-05/is16062-image-kwvyfkwr.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a4c54f77681e4e7f2cbb7e81b849941c" class="d-block w-100" id="himg" alt="food menu" >
               <div class="carousel-caption d-none d-md-block" id="wal">
-                <h1 style="height: 200px;"><big>OUR MENU</big></h1>
+                <h1 id="mainh" style="height: 200px;"><big>OUR MENU</big></h1>
               </div>
             </div>
           </div>
@@ -128,7 +190,7 @@
     <center>
         <div>
           <div class="tit" id="info">
-            <h2> Caffee Delight Menu</h2>
+            <h2> Cafe Delight Menu</h2>
            </div>
             <br>
             <br>
